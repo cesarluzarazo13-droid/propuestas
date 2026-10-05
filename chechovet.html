@@ -1,0 +1,159 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Propuesta de contenido para Chechovet</title>
+<meta name="description" content="Propuesta de contenido para Instagram preparada por Cesar Lizarazo para Chechovet.">
+<meta property="og:title" content="Propuesta de contenido para Chechovet"><meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap"><style>
+/* Layout: propuesta editorial con la identidad de la clínica (azul noche, azul eléctrico, itálica Cormorant). Hero + diagnóstico + material existente + perfil propuesto + plan */
+:root{
+  --bg:#f5f7fc; --surface:#ffffff; --fg:#0b1430; --muted:#55607d; --line:#dbe2f1;
+  --eb:#1f6feb; --night:#102033; --blue:#1f6feb; --sky:#8cc4ff; --sky-soft:#e1efff; --on-night:#e8eeff; --on-night-muted:#a9b6d8;
+  --serif:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --sans:"Manrope", "Segoe UI", Roboto, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#060b1e; --surface:#0d1633; --fg:#e8eeff; --muted:#9fabcc; --line:#1d2a52; --sky-soft:color-mix(in srgb, #1f6feb 22%, #0a0a0a); --eb:#8cc4ff; color-scheme:dark }}
+:root[data-theme="dark"]{ --bg:#060b1e; --surface:#0d1633; --fg:#e8eeff; --muted:#9fabcc; --line:#1d2a52; --sky-soft:color-mix(in srgb, #1f6feb 22%, #0a0a0a); --eb:#8cc4ff; color-scheme:dark }
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--sans)}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px;padding-block:24px 72px;display:grid;gap:64px}
+h1,h2,h3{margin:0;text-wrap:balance;line-height:1.1;font-weight:800;letter-spacing:-.02em}
+h1{font-size:clamp(34px,5.2vw,56px)}
+h2{font-size:clamp(26px,3.2vw,36px)}
+h3{font-size:18px;font-weight:700;letter-spacing:-.01em}
+em.s{font-family:var(--serif);font-style:italic;font-weight:600;color:var(--sky);letter-spacing:0;font-size:1.12em}
+p{margin:0}
+.eyebrow{font:700 12px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--eb)}
+.lede{font-size:18px;color:var(--muted);max-width:60ch}
+.intro{color:var(--muted);max-width:64ch}
+
+/* hero */
+.hero{background:var(--night);color:var(--on-night);border-radius:22px;padding:clamp(28px,5vw,56px);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:40px;align-items:center}
+@media (max-width:860px){.hero{grid-template-columns:1fr}}
+.hero .eyebrow{color:var(--sky)}
+.hero h1{color:#fff}
+.hero .lede{color:var(--on-night-muted)}
+.hero-copy{display:grid;gap:20px}
+.facts{display:flex;flex-wrap:wrap;gap:28px;padding-top:6px}
+.facts b{display:block;font:800 30px/1 var(--sans);color:#fff;font-variant-numeric:tabular-nums}
+.facts span{font-size:13px;color:var(--on-night-muted)}
+
+/* phone */
+.phone{justify-self:center;width:min(350px,100%);background:#fff;color:#0b1430;border-radius:30px;padding:16px 12px 12px;display:grid;gap:10px;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.ig-top{display:flex;gap:14px;align-items:center;padding-inline:4px}
+.avatar{width:62px;height:62px;border-radius:50%;background:var(--night);display:grid;place-items:center;border:3px solid var(--sky);flex:none;font:italic 600 22px var(--serif);color:#fff}
+.ig-nums{display:flex;gap:14px;font-size:12px;text-align:center}
+.ig-nums b{display:block;font-size:15px}
+.ig-bio{font-size:12.5px;line-height:1.45;padding-inline:4px}
+.ig-bio b{display:block}
+.hl{display:flex;gap:10px;padding-inline:4px;overflow:hidden}
+.hl span{display:grid;justify-items:center;gap:3px;font-size:10px;color:#55607d}
+.hl i{width:40px;height:40px;border-radius:50%;border:2px solid #dbe2f1;background:var(--sky-soft);display:block}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+.tile{aspect-ratio:4/5;max-width:100%;padding:8px;display:flex;flex-direction:column;justify-content:flex-end;font:800 10.5px/1.15 var(--sans);color:#fff;position:relative;overflow:hidden}
+.tile small{font:500 9px/1.2 var(--sans);opacity:.85}
+.tile .ser{font:italic 600 14px/1 var(--serif);color:var(--sky)}
+.n{background:var(--night)} .b{background:var(--blue)} .l{background:#e1efff;color:#102033} .l .ser{color:var(--blue)}
+.reel::after{content:"▶";position:absolute;top:6px;right:8px;font-size:10px}
+.ba{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.ba span{display:grid;place-items:center;font:700 9px var(--sans)}
+.ba span:first-child{background:#cfd6e6;color:#3d4766}.ba span:last-child{background:#f4f7ff;color:var(--blue)}
+
+/* sections */
+.section{display:grid;gap:22px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;display:grid;gap:10px;align-content:start}
+.box ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.box.good h3::before{content:"✓ ";color:var(--blue)}
+.gap{background:var(--sky-soft);border:0}
+.timeline{display:grid;grid-template-columns:repeat(12,1fr);gap:3px;margin-top:4px}
+.timeline span{height:28px;border-radius:4px;background:var(--line);position:relative}
+.timeline span.on{background:var(--blue)}
+.tl-l{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:640px;background:var(--surface);border:1px solid var(--line);font-size:14px}
+th,td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font:700 11px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--bg)}
+td:first-child{font-weight:700;white-space:nowrap}
+.k{display:inline-block;font-size:11px;font-weight:700;padding:2px 7px;border-radius:4px;background:var(--sky-soft);color:var(--blue);margin-right:6px}
+
+.posts{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.post{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:grid;align-content:start}
+.art{aspect-ratio:4/5;max-width:100%;padding:26px;display:flex;flex-direction:column;justify-content:space-between;color:#fff}
+.art h3{font:800 27px/1.08 var(--sans);letter-spacing:-.02em}
+.art h3 em{font-family:var(--serif);font-style:italic;font-weight:600;color:var(--sky);font-size:1.15em}
+.art .foot{font:700 11px var(--sans);letter-spacing:.1em;text-transform:uppercase;opacity:.8}
+.art.light{background:#e1efff;color:#102033}.art.light h3 em{color:var(--blue)}
+.cap{padding:16px 18px;display:grid;gap:8px;font-size:14px}
+.cap .type{font:700 11px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}
+.cap .src{font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.member{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:4px}
+.member b{font-size:15px}
+.member span{font-size:13px;color:var(--muted)}
+.member i{font:italic 600 15px var(--serif);color:var(--blue)}
+
+.cta{background:var(--night);color:var(--on-night);border-radius:22px;padding:clamp(28px,5vw,48px);display:grid;gap:18px}
+.cta h2{color:#fff}
+.cta p{color:var(--on-night-muted);max-width:62ch}
+.plan{display:flex;flex-wrap:wrap;gap:14px 40px}
+.plan b{display:block;font:800 26px var(--sans);color:var(--sky);font-variant-numeric:tabular-nums}
+.plan span{font-size:13px;color:var(--on-night-muted)}
+.sig{font-size:15px;color:#fff}
+.sig small{display:block;color:var(--on-night-muted);font-size:13px}
+.disclaimer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+
+.dots{position:relative;height:46px;border-bottom:1px solid var(--line);margin-top:6px}
+.dots i{position:absolute;bottom:8px;width:12px;height:12px;border-radius:50%;background:var(--blue);transform:translateX(-50%);border:2px solid var(--surface)}
+.note2{font-size:13px;color:var(--muted)}
+.section em.s{color:var(--blue)}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .section em.s{color:var(--sky)} }
+:root[data-theme="dark"] .section em.s{color:var(--sky)}
+.extra{background:var(--sky-soft);border-radius:14px;padding:20px;display:grid;gap:8px}
+</style><style>body{margin:0}</style></head><body>
+<div class="wrap">
+<section class="hero"><div class="hero-copy">
+<span class="eyebrow">Propuesta para Chechovet</span>
+<h1>14 mil seguidores y atención 24/7. El perfil tuvo <em>un año en silencio</em>.</h1>
+<p class="lede">Chechovet tiene una audiencia grande: más de 14 mil seguidores. Entre octubre de 2025 y agosto de 2026 no publicó, y aunque retomó en septiembre, el reto es sostener el ritmo.</p>
+<div class="facts"><div><b>14,1 mil</b><span>seguidores</span></div><div><b>4.5</b><span>187 reseñas en Google</span></div><div><b>24/7</b><span>atención</span></div></div></div>
+<div class="phone" aria-label="Vista previa del perfil con el contenido propuesto">
+<div class="ig-top"><div class="avatar" aria-hidden="true">CV</div><div class="ig-nums"><div><b>1099</b>posts</div><div><b>14,1 mil</b>seguidores</div><div><b>2957</b>seguidos</div></div></div>
+<div class="ig-bio"><b>chechovet</b>Servicios especializados para tu mascota<br>Salud y bienestar<br>Bogotá · 24/7</div>
+<div class="hl" aria-hidden="true"><span><i></i>Urgencias</span><span><i></i>Especialistas</span><span><i></i>Pacientes</span><span><i></i>Consejos</span><span><i></i>Agenda</span></div>
+<div class="grid"><div class="tile n reel">Urgencia a medianoche</div><div class="tile l">Paciente de la semana</div><div class="tile b">Nuestros especialistas</div><div class="tile l">Vacunas por edad</div><div class="tile n reel">Un turno de noche</div><div class="tile b">Intoxicaciones comunes</div><div class="tile b reel">Primeros auxilios</div><div class="tile n">Gatos: estrés<small>Carrusel</small></div><div class="tile l">Agenda</div></div></div></section>
+
+<section class="section"><span class="eyebrow">Lo que encontré en su perfil</span>
+<h2>Lo que funciona y <em class="s">lo que falta</em></h2>
+<div class="two"><div class="box good"><h3>Lo que ya tiene</h3><ul><li>Más de 14 mil seguidores.</li><li>Atención 24/7: un servicio que da tranquilidad.</li><li>Servicios especializados.</li><li>Ya retomó en septiembre.</li></ul></div>
+<div class="box gap"><h3>Lo que está frenando el crecimiento</h3><ul><li>Entre octubre de 2025 y agosto de 2026 no hubo publicaciones.</li><li>Las urgencias 24/7 no tienen contenido propio.</li><li>Una audiencia grande se enfría rápido sin constancia.</li><li>Los especialistas no aparecen en el perfil.</li></ul></div></div>
+<div class="box"><h3>Sus 12 publicaciones más recientes</h3>
+<div class="dots" aria-label="Fechas de publicación en el último año"><i style="left:98.4%" title="28 sep 2026"></i><i style="left:97.3%" title="24 sep 2026"></i><i style="left:97.0%" title="23 sep 2026"></i><i style="left:92.1%" title="5 sep 2026"></i><i style="left:91.5%" title="3 sep 2026"></i><i style="left:91.2%" title="2 sep 2026"></i><i style="left:91.2%" title="2 sep 2026"></i><i style="left:91.0%" title="1 sep 2026"></i><i style="left:90.7%" title="31 ago 2026"></i><i style="left:1.9%" title="11 oct 2025"></i></div>
+<div class="tl-l"><span>oct 2025</span><span>hoy</span></div>
+<p class="note2">Cada punto es una publicación de @chechovet en los últimos 12 meses. Otras 2 de esas 12 son anteriores a octubre de 2025. Última publicación: 28 de sep de 2026.</p></div>
+</section>
+
+<section class="section"><span class="eyebrow">El material ya existe</span>
+<h2>Contenido para <em class="s">meses</em>, sin empezar de cero</h2>
+<p class="intro">Gran parte de las publicaciones sale de lo que ya existe en su sitio web, su biografía y su trabajo diario.</p>
+<div class="tablewrap"><table><thead><tr><th>Lo que ya tiene</th><th>En Instagram se convierte en</th><th>Piezas</th></tr></thead><tbody><tr><td>Urgencias 24/7</td><td>Primeros auxilios y qué hacer</td><td>4</td></tr><tr><td>Especialistas</td><td>Presentación del equipo</td><td>3</td></tr><tr><td>Pacientes</td><td>Historias con permiso del tutor</td><td>4</td></tr><tr><td>Prevención</td><td>Vacunas e intoxicaciones</td><td>3</td></tr></tbody></table></div>
+<p class="intro" style="font-size:14px">Son unas 14 piezas antes de grabar nada nuevo.</p></section>
+
+<section class="section"><span class="eyebrow">Tres piezas de ejemplo</span>
+<h2>Con su voz y su <em class="s">enfoque</em></h2>
+<p class="intro">Los colores de esta propuesta son de referencia. En el trabajo real usamos la identidad visual de su marca.</p>
+<div class="posts"><article class="post"><div class="art" style="background:var(--night)"><span class="foot">Carrusel · 6 láminas</span><h3>Intoxicaciones: <em>qué hacer</em> antes de llegar</h3><span class="foot">chechovet</span></div><div class="cap"><span class="type">Urgencias</span><p>Guía de primeros pasos. Contenido que se guarda.</p><p class="src">Fuente: su atención 24/7</p></div></article><article class="post"><div class="art" style="background:var(--blue)"><span class="foot">Reel · 30 segundos</span><h3>Así es un <em>turno de noche</em> en Chechovet</h3><span class="foot">chechovet</span></div><div class="cap"><span class="type">Detrás de cámaras</span><p>Muestra la atención 24/7 y genera confianza.</p><p class="src">Fuente: su biografía</p></div></article><article class="post"><div class="art light"><span class="foot">Post</span><h3>Conoce a nuestros <em>especialistas</em></h3><span class="foot">chechovet</span></div><div class="cap"><span class="type">Equipo</span><p>Presentación del equipo médico.</p><p class="src">Fuente: su biografía</p></div></article></div></section>
+
+<section class="section"><span class="eyebrow">Primer mes</span>
+<h2>Un calendario que <em class="s">no depende</em> de su agenda</h2>
+<p class="intro">Tres publicaciones por semana. Todo se aprueba antes de publicarse y solo se graba un video corto a la semana.</p>
+<div class="tablewrap"><table><thead><tr><th>Semana</th><th>Lunes · Educa</th><th>Miércoles · Video</th><th>Viernes · Confianza</th></tr></thead><tbody><tr><td>1</td><td><span class="k">Carrusel</span>Intoxicaciones</td><td><span class="k">Reel</span>Turno de noche</td><td>Paciente de la semana</td></tr><tr><td>2</td><td><span class="k">Carrusel</span>Primeros auxilios</td><td><span class="k">Reel</span>Especialista</td><td>Opinión de tutor</td></tr><tr><td>3</td><td><span class="k">Carrusel</span>Vacunas</td><td><span class="k">Reel</span>Urgencia explicada</td><td>Paciente de la semana</td></tr><tr><td>4</td><td><span class="k">Carrusel</span>Estrés en gatos</td><td><span class="k">Reel</span>Pregunta frecuente</td><td>Agenda</td></tr></tbody></table></div></section>
+
+<section class="cta"><span class="eyebrow">Siguiente paso</span>
+<h2>¿Agendamos una reunión de <em class="s">15 minutos</em>?</h2>
+<p>Si la propuesta es de su interés, con gusto les explico cómo trabajaríamos y ajustamos el calendario a los servicios que más les interesa mostrar. El primer mes tiene un 50 % de descuento para evaluar el servicio sin compromiso.</p>
+<div class="plan"><div><b>$1.000.000</b><span>mensuales · 12 publicaciones, 4 en video</span></div><div><b>$500.000</b><span>primer mes</span></div></div>
+<p class="sig">Cesar Lizarazo<small>Gestión de contenido para clínicas veterinarias</small></p></section>
+<p class="disclaimer">Propuesta preparada por Cesar Lizarazo para Chechovet. Las piezas son ejemplos y no se han publicado. La información se tomó de su perfil de Instagram, su sitio web y Google Maps el 4 de octubre de 2026. Precios en pesos colombianos, sin IVA.</p>
+</div></body></html>
